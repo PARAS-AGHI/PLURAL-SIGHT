@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: 'Nunito Sans', sans-serif;;
+    }
+ .form_plural{
+     /* border: 2px solid red; */
+     width: 100%;
+     height: 837px;
+     display: grid;
+     grid-template-columns: 40% 60%;
+     grid-template-rows: 820px;
+ }
+ .form_plural>div{
+     border: 2px solid black;
+ }
+ #form_name{
+      border: 2px solid black;
+      background-color: #181818;
+ }
+ #inside_form{
+    /* border: 2px solid orangered; */
+    width: 400px;
+    height: 800px;
+    margin: auto;
+    
+ }
+ #inside_form>div{
+    /* border: 2px solid white; */
+     width: 100%;
+     height: 100px;
+     color: #ffffff;
+     margin-top: 20px;
+ }
+ #inside_form_logo{
+     /* border: 2px solid orangered; */
+     width: 100%;
+     height: 130px;
+ }
+ 
+ #inside_form_logo>img{
+     width: 100%;
+     height:100%;
+ }
+
+ .email{
+    border: 2px solid #ffffff;
+     width: 99%;
+     height: 40px;
+     position: relative;
+     bottom: 12px;
+     background-color: #222222;
+     border-radius: 4px;
+     color: #ffffff;
+     
+ }
+ #form-sign-in{
+    
+    width: 99%;
+     height: 50px;
+     color:#ffffff;
+     background-color: #0074ab;
+     border-radius: 7px;
+     
+     
+ }
+ #after-submit>h4{
+     text-align: center;
+     color:#0074ab;
+     font-size: 20px;
+ }
+ #create_new>div{
+    /* border: 2px solid rgb(0, 255, 170); */
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #ffffff;
+    border-radius: 7px;
+    background-color: #8a99a840;
+    padding-top: 12px;
+ }
+
+
+
+ #cool_one_inn{
+     width: 100%;
+     height: 100%;
+     
+ }
+ 
+#cool_image>div{
+/* border: 2px solid rgb(0, 255, 157); */
+width: 100%;
+height:820px;
+background-image: url("https://app.pluralsight.com/id/img/login-bg.jpg");
+color: #ffffff;
+position: relative;
+bottom: 30px;
+}
+#cool_image>div>h1{
+    position: relative;
+    left:100px;
+    top:250px;
+    font-size: 45px;
+}
+
+#cool_image>div>button{
+    background: linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+    padding: 15px 30px 15px 30px;
+    color:#ffffff;
+    width: 300px;
+    font-size: 17px;
+    border-radius: 7px;
+    position: relative;
+    top:310px;
+    left:100px;
+    
+
+}
+
+
+</style>
+<body>
+    <div class="form_plural">
+
+         <div id="form_name">
+             <div id="inside_form">
+                <div id="inside_form_logo"><image src="https://app.pluralsight.com/id/img/login-logo.png" ></image></div>
+                <div>
+                    <form id="form2">
+                    <h4>Email or Username</h4>
+                    <input type="email" placeholder="Enter Email" class="email"  id="user">
+                </div>
+
+                <div >
+                    <h4>Password</h4>
+                    <input type="password" placeholder="Enter Password" class="email"  id="pass">
+                </div>
+
+                <div>
+                    <input type="Submit" id="form-sign-in" placeholder="Sign-In" >
+                </div>
+
+                 </form>
+                <div id="after-submit">
+                    <h4>Forgot Password?</h4>
+                    <h4>Sign In with company or school</h4>
+                </div>
+                <div id="create_new">
+                    <div>Create an account</div>
+                </div>
+                <p style="font-size: 10px; color:#ffffff; text-align: center;" >  Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved.</p>
+             </div>
+            </div> 
+            
+            
+
+
+         <div id="cool_image">
+             
+
+             <div id="c_h1">
+                 <h1 >BUILD THE SKILLS<br> YOU NEED TO<br> DELIVER RESULTS</h1>
+                 <button onclick="free()">Try For Free</button>
+             </div>
+         </div>
+         
+    </div>
+</body>
+</html>
+
+<script src="../js/login.js">
+ 
+</script>

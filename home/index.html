@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: #000000;
+        font-family: 'Nunito Sans', sans-serif;;
+    }
+
+    /* try free */
+    .VP-TFF{
+             /* border:2px solid grey; */
+             width: 100%;
+             height:200px;
+             display: flex;
+             justify-content: center;
+             background-color: #000000;
+       }
+       
+       
+       #try{
+           /* border: 2px solid #ffffff; */
+           background-color: #222222;
+           width: 215px;
+           height: 70px;
+           font-size: 25px;
+           margin-top: 15px;
+           color: #ffffff;
+           margin-left: 20px;
+           
+           
+       }
+       #try>button{
+           /* border: 2px solid #222222; */
+           width: 205px;
+           height: 70px;
+           font-size: 25px;
+           background-color: #222222;
+           color: #ffffff;
+           margin-left: 3px;
+       }
+       #view-plan{
+           /* border: 2px solid #f15b2a; */
+           width: 205px;
+           height: 70px;
+           font-size: 25px;
+           margin-top: 15px;
+           color: #ffffff;
+           margin-right: 25px;
+           background-color: #f15b2a;
+       }
+       #view-plan>button{
+           /* border: 2px solid #f15b2a; */
+           color: #ffffff;
+           width: 185px;
+           height: 70px;
+           font-size: 25px;
+           margin-left: 7px;
+           background-color: #f15b2a;
+       }
+
+
+       /* animation */
+
+       .bg_anim{
+    margin-top: 40px;
+    /* border:2px solid red; */
+    width: 100%;
+    height: 400px;
+    background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/hero-illustration.png");
+    background-color: black;
+    /* display: flex; */
+        align-items: end;
+        justify-content: end;
+        min-height: 100vh;
+        background-color: black;
+}
+
+
+    .wrapper{
+        display: inline-flex;
+    }
+    .wrapper .static-txt{
+        font-size: 60px;
+        color:#ffffff;
+        font-weight: 400;
+
+    }
+    .wrapper .dynamic-txts{
+        margin-left: 15px;
+        line-height: 80px;
+        background: black;
+        /* overflow: hidden; */
+
+    }
+    .dynamic-txts li{
+        list-style: none;
+        font-size: 60px;
+        font-weight: 500;
+        color:white;
+        animation: slide 6s steps(0) infinite;
+        position: relative;
+        top:0;
+        overflow: hidden;
+    }
+    @keyframes slide{
+        100%{
+            top:-360px
+        }
+    }
+    /* #bad_anim{
+        height:400px;
+        width: 250px;
+    } */
+    .dynamic-txts li span{
+        position: relative;
+    }
+    .dynamic-txts li span::after{
+        content: "";
+        position: absolute;
+        left:0;
+        height: 100%;
+        width:100%;
+        border-left: 2px solid white;
+        animation: typing 1.5s steps(9) infinite;
+        background: white;
+
+    }
+    @keyframes typing{
+        100%{
+            left: 100%;
+            margin: 0 -35px 0 35px;
+        }
+    }
+
+
+
+
+       
+   /* boundary */
+
+       #border{
+            width: 100%;
+            background-color: #000000;
+            height: 200px;
+        }
+        #border>div{
+            border: 1px solid #e40084;
+            width:0.5%;
+            height: 100%;
+            margin: auto;
+            background-color: #f15b2a;
+        }
+
+
+
+
+
+/* ads */
+
+     .ads-main{
+        border:2px solid #222222;
+        width: 100%;
+        height: 78.13px ;
+        display: flex;
+        background-color: #222222;
+    }
+    .ads{
+        /* border:2px solid white; */
+        width: 1380px;
+        height:68.13px;
+        background-color: #222222;
+    }
+    .ads-main>button{
+        border: 2px solid #222222;
+        width: 40.17px;
+        height: 44px;
+        padding: 7px 15px;
+        color:#ffffff;
+        font:20px;
+        background-color: #222222;
+        position: relative;
+        left:60px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+/* 
+javascript,angular */
+
+    .main{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 730.39px ;
+        padding: 50px 0px 100px;
+        background-color: #000000;
+        color: #eeeeee;
+    }
+    .container{
+        /* border: 2px solid teal; */
+        width: 60% ;
+        height: 820.39px;
+        margin: auto;
+    }
+    .h6{
+        color:#e40084;
+        margin: 0px 0px 20px;
+        width: 940px;
+        height: 21px;
+        font-size: 22px;
+        
+    }
+    .h3{
+        width: 940px;
+        height: 38.39px ;
+        padding: 0px 0px 20px;
+        color:#ffffff;
+        font-size: 40px;
+    }
+    .grid{
+        /* border: 2px solid salmon; */
+        width: 100%;
+        height: 550px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+        gap:80px;
+    }
+    .grid>div{
+        /* border: 2px solid gold; */
+        border-radius: 10px;
+        background-color: #222222;
+    }
+    .Path{
+        /* border: 2px solid #e40084; */
+        width: 260px;
+        height: 19.5px;
+        color:#ec008c;
+        margin-left: 25px ;
+        margin-top: 30px;
+        display: inline-block;
+        position: relative;
+        bottom: 50px;
+        
+
+    }
+    .icon{
+       /* border: 2px solid greenyellow; */
+       width: 100px;
+       height: 100px;
+       display: inline-block;
+       
+       
+    }
+    .icon img{
+        width: 100%;
+        height: 100%;
+    }
+    .Title{
+        /* border:2px solid magenta; */
+        width: 190px ;
+        height: 30.8px;
+        color: #ffffff;
+        font-size: 29px;
+        margin-left: 25px;
+        position: relative;
+        bottom: 40px;
+        
+
+    }
+    .courses{
+        /* border:2px solid #e40084; */
+        width: 190px;
+        height: 25.5px;
+        color:#aaaaaa;
+        margin-left: 25px;
+        position: relative;
+        bottom: 30px;
+        font-size: 24px;
+        
+    }
+    .look{
+        /* border: 2px solid magenta; */
+        width: 190px;
+        height: 37px;
+        position: relative;
+        bottom: 0px;
+        font-weight: bolder;margin-left: 25px;
+    }
+
+
+
+        /* whats-new */
+
+        .whats-new{
+        /* border: 2px solid white; */
+        width: 100%;
+        height: 230px;
+        background-color: #181818;
+    }
+    .whats-new h5{
+        color:#e40084;
+        margin-top: 130px;
+        margin-left: 10px;
+        
+    }
+    .whats-new h1{
+        color: #ffffff;
+        margin-left: 10px;
+        font-size: 40px;
+    }
+
+  
+    /* expertise */
+.expertise{
+    /* border: 2px solid goldenrod; */
+    background-color: #181818;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 480px 480px;
+    
+}
+.expertise>div{
+    border:2px solid black;
+    border-radius: 10px;
+    
+}
+#expert-one{
+margin-left: 50px;
+background-color: #222222;
+text-align: start;
+}
+#expert-one-logo{
+    border:2px solid black;
+    width: 200px;
+    height: 40px;
+    background-color: #181818;
+    margin-left: 30px;
+    display: inline-block;
+    
+}
+#expert-one-heading{
+    /* border:2px solid red; */
+    width:100px ;
+    height: 40px;
+    margin-left: 20px;
+    color: #ffffff;
+    background-color: #181818;
+    display: inline-block;
+}
+
+#expert-one h1{
+     color: #ffffff;
+     margin-left: 30px;
+}
+#expert-one p{
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 30px;
+}
+#expert-one  .learn-more{
+    /* border:2px solid white; */
+    width: 200px;
+    height: 40px;
+    margin-top: 70px;
+    color:#ffffff;font-size: 22px;
+    margin-left: 30px;
+    background-color: #181818;
+}
+
+
+
+#expert-two{
+margin-right: 50px;
+}
+
+#expert-two img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* certification divs */
+.certificate{
+    
+        /* border: 2px solid red; */
+        width:100%;
+        height:600px;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 520px; 
+        gap:30px;
+        background-color: #181818;
+
+    }
+    .certificate>div{
+        /* border: 2px solid orangered; */
+        border-radius: 14px;
+        background-color: #222222;
+        text-align: start;
+        margin-top: 60px;
+        color: #ffffff;
+        
+    }
+    #certification{
+         margin-left: 30px;
+         background-color: #222222;
+         
+    }
+    #cert_prep{
+        /* border: 2px solid orangered; */
+        width: 250px;
+        height: 20px;
+        margin-top: 30px;
+        margin-left: 10px;
+        
+    }
+    #cert_prep>img{
+        width: 100%;
+        height: 100%;
+    }
+    #certification h1{
+        margin-left: 20px;
+    }
+    #certification p{
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    #certification #learn_more{
+        /* border:2px solid magenta; */
+        color: #ffffff;
+        width: 100px;
+        height: 50px;
+        margin-left: 23px;
+    }
+
+
+
+    #delivery-module{
+        margin-left: 30px;
+         background-color: #222222;
+         color: #ffffff;
+    }
+    #delivery_modu{
+        /* border: 2px solid orangered; */
+        width: 250px;
+        height: 20px;
+        margin-top: 30px;
+        margin-left: 10px;
+        
+    }
+    #delivery_modu>img{
+        width: 100%;
+        height: 100%;
+    }
+    #delivery-module h1{
+        margin-left: 20px;
+    }
+    #delivery-module p{
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    #delivery-module #learn_more{
+        /* border:2px solid magenta; */
+        color: #ffffff;
+        width: 100px;
+        height: 50px;
+        margin-left: 23px;
+    }
+
+
+    #sandboxes{
+        margin-right: 30px;
+        background-color: #222222;
+         color: #ffffff;
+    }
+    #sandbox_sand{
+        /* border: 2px solid orangered; */
+        width: 250px;
+        height: 20px;
+        margin-top: 30px;
+        margin-left: 10px;
+        
+    }
+    #sandbox_sand>img{
+        width: 100%;
+        height: 100%;
+    }
+    #sandboxes h1{
+        margin-left: 20px;
+    }
+    #sandboxes p{
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    #sandboxes #learn_more{
+        /* border:2px solid magenta; */
+        color: #ffffff;
+        width: 100px;
+        height: 50px;
+        margin-left: 23px;
+    }
+
+/* key-upto-date */
+.key-upto{
+       /* border: 2px solid red; */
+       width: 100%;
+       height: 200px;
+       background-color: #181818;
+       color: #ffffff;
+       
+
+   }
+   .key-upto h4{
+       color: #e40084;
+       margin-left: 20px;
+       margin-top: 100px ;
+   }
+   .key-upto h1{
+       margin-left: 20px;
+   }
+
+   .key-grid{
+       /* border: 2px solid red; */
+       background-color: #181818;
+       width: 100%;
+       height: 552px;
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: 522px;
+       gap: 30px;
+       color: #ffffff;
+       
+   }
+   .key-grid>div{
+       /* border: 2px solid white; */
+       
+   }
+   #key-grid-first{
+       /* border: 2px solid grey; */
+       width: 100%;     
+       height:250px; 
+       font-size: 18px;
+       margin-top: 20px;
+       border-radius: 12px;
+       color:#ffffff;
+       /* border:2px solid magenta */
+       
+       
+   }
+/* 70  x 250px */
+   #key-grid-first-image{
+       width: 100%;
+       height: 100%;
+       border-radius: 12px;
+   }
+   #key-grid-first h3{
+       color: #ffba0e;
+   }
+
+
+   /* blog */
+   .blogging{
+       /* border: 2px solid red; */
+       width: 100%;
+       height: auto;
+       display: grid;
+       grid-template-columns: 60% 40%;
+       grid-template-rows: 600px;
+   }
+   .blogging>div{
+       border:2px solid black;
+   }
+   #photo_one{
+       background-image: url("https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/targeted_section/targeted-parsys-customer-types-1/generic_block/parsys/columns/column-parsys-1/generic_block/image-res.img.9f04d461-0d91-4ada-a995-52d553f671fa.png");
+   }
+   #photo_one>h1{
+       font-size: 70px;
+       font-weight: bolder;
+       color: rgb(205, 195, 50);
+       margin-left: 30px;
+
+   }
+
+   .soldier{
+       background-color:#1893bd;
+       text-align: center;
+   }
+   .soldier>h1{
+       color: white;
+       font-size: 38px;
+   }
+   .soldier>p{
+    color: white;
+       font-size: 28px;
+       margin: 85px 45px 25px 45px;
+   }
+
+.soldier>button{
+    margin-top: 45px;
+    border: 5px solid black;
+    background-color: black;
+    width: 250px;
+    height: 60px;
+    color: white;
+    font-size: 22px;
+}
+
+
+
+/* footer */
+
+
+
+
+
+</style>
+<body>
+        <!-- ads -->
+        <div class="ads-main">
+            <div class="ads">
+               <img src="https://www.pluralsight.com/content/pluralsight/en/global/promos/tech-bingo/jcr:content/main/promo_wrapper_copy/parsys/generic_block_108870/parsys/generic_block_copy_c/parsys/generic_block_363416/parsys/columns/column-parsys-1/animation_wrapper/parsys/image/image-res.img.6c055658-1a52-4252-ba5b-12be3a3814e5.png" >
+            </div>
+            <button>X</button>
+        </div> 
+        
+        <!-- animation -->
+
+        <div class="bg_anim">
+            <div  style="display:flex ;margin-left:550px">
+            <div class="wrapper">
+                <div class="static-txt">Build Better</div>
+                <ul class="dynamic-txts">
+                    <li><span>Products</span></li>
+                    <li><span>Workflows</span></li>
+                    <li><span>Teams</span></li>
+                    <li><span>Skills</span></li>
+                    <li><span>Processes</span></li>
+                </ul>
+            </div>
+
+   </div>
+
+
+
+
+
+
+  <!-- view plan,try for free -->
+    <div class="VP-TFF">
+        <div id="view-plan" ><button onclick="paras()">VIEW PLANS</button></div>
+        <div id="try"><button onclick="paras()">TRY FOR FREE</button></div>
+    </div>
+
+
+
+
+
+
+<!-- 
+boundary -->
+<div id="border">
+    <div></div>
+</div>
+
+
+
+<!-- javascript,angular -->
+
+    <div class="main">
+        <div class="container">
+            <div class="h6"><h6>TRENDING TECHNOLOGIES</h6></div>
+            <div class="h3"><h3>Popular topics to learn now</h3></div>
+            <div class="grid">
+                <div>
+                    <div class="Path">PATH</div>
+                    <div class="icon"><img src="https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png" /></div>
+                    <div class="Title">JavaScript</div>
+                    <div class="courses">11 Courses</div>
+                    <div class="look" onclick="java()">Take a look ></div>
+                </div>
+
+
+                <div>
+                    <div class="Path">PATH</div>
+                    <div class="icon"><img src="https://pluralsight.imgix.net/paths/path-icons/angular-14a0f6532f.png" /></div>
+                    <div class="Title">Angular</div>
+                    <div class="courses">14 Courses</div>
+                    <div class="look" onclick="java()">Take a look ></div>
+                </div>
+
+
+                <div>
+                    <div class="Path">PATH</div>
+                    <div class="icon"><img src="https://pluralsight.imgix.net/paths/python-7be70baaac.png" /></div>
+                    <div class="Title">Python</div>
+                    <div class="courses">12 Courses</div>
+                    <div class="look" onclick="java()">Take a look ></div>
+                </div>
+
+
+                <div>
+                    <div class="Path">PATH</div>
+                    <div class="icon"><img src="https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png?" /></div>
+                    <div class="Title">C#</div>
+                    <div class="courses">19 Courses</div>
+                    <div class="look" onclick="java()">Take a look ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- whats-new -->
+   <div class="whats-new">
+    <h5>SEE WHAT'S NEW</h5>
+    <h1>Our latest features</h1>
+</div>
+
+
+
+<div class="expertise">
+    <div id="expert-one">
+        <div id="expert-one-logo">
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png" >
+            
+        </div>
+        <div id="expert-one-heading"><h4>LABS</h4></div>
+
+        <h1>Deepen your people's expertise with <br>hands-on labs</h1>
+        <p>Improve your teams’ confidence in their ability to deliver on business<br> objectives by building the right skills that meet your org’s needs. Pluralsight offers 950+ labs that enable hands-on practice in secure environments across domains such as cloud (AWS, GCP and Azure), IT Ops, security, data and software development</p>
+        
+        <div class="learn-more" onclick="skilly()">Learn More   ></div>
+    </div>
+
+
+
+    <div id="expert-two">
+        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/Cloud-labs-image2x.png" >
+    </div>
+
+</div>
+
+
+
+<!-- certification divs -->
+
+<div class="certificate" >
+    <div id="certification">
+        <div id="cert_prep"><img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/certification-prep.png" > </div>
+        <h1>Empower your teams<br> to grow their skills and their careers</h1>
+        <p>Prepare your team for certification exams<br> with our expert authored content and<br> practice exams</p>
+        <div id="learn_more" onclick="cert()">Learn More></div>
+    </div>
+
+
+    <div id="delivery-module">
+     <div id="delivery_modu"><img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/delivery-module.png" ></div>
+     <h1>Make lasting workflow improvements with insights from your Jira data</h1>
+     <p>Go beyond Jira data and get visibility into what’s happening within your user stories, tasks and bugs. Flow’s delivery module helps you better understand how your team is working and can make lasting improvements to your workflow.</p>
+     <div id="learn_more" onclick="cert()">Learn More></div>
+    </div>
+
+
+    <div  id="sandboxes">
+     <div id="sandbox_sand"><img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/sandboxes.png" ></div>
+     <h1>Utilize a space for unrestricted exploration</h1>
+     <p>Sandboxes gives your team a safe environment to practice what they're learning from expert-authored courses.</p>
+     <div id="learn_more" onclick="cert()">Learn More></div>
+    </div>
+ </div>
+
+
+<!-- key-upto-date -->
+<div class="key-upto">
+    <h4>KEEP UP TO DATE</h4>
+    <h1>Discover more about Pluralsight</h1>
+    
+</div>
+
+
+<div class="key-grid">
+    <div id="key-grid-first">
+        <img id="key-grid-first-image" src="https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_135160/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy/parsys/image/image-res.img.c019902f-4ccb-4794-b333-65fa9c4c65b0.jpg" >
+        <h3>WHAT IS PLURALSIGHT SKILLS?</h3>
+        <p>Discover the fastest, most effective path to developing technology skills</p>
+    </div>
+
+
+    <div id="key-grid-first">
+        <img id="key-grid-first-image" src="https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_135160/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy_1875049544/parsys/image/image-res.img.e2124b15-cc2b-4a54-afc6-8c55168690a7.png" >
+        <h3>PLURALSIGHT NAMED A LEADER FOR IT TRAINING</h3>
+        <p>We're honored to be recognized in the 2021 IDC MarketScape for IT training.</p>
+    </div>
+
+
+
+    <div id="key-grid-first">
+        <img id="key-grid-first-image" src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/flow-demo-thumbnail.png" >
+        <h3>LEARN HOW TO DE-FRICTION YOUR SOFTWARE DEVELOPMENT WORKFLOW WITH FLOW</h3>
+        <p>Take a guided tour through Pluralsight Flow to see how visibility can take your team to the next level</p>
+    </div>
+
+
+
+    <div id="key-grid-first">
+        <img id="key-grid-first-image" src="https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_135160/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy_383891725/parsys/image/image-res.img.476ff2a8-d6ec-4797-8c6d-efe41a4b5039.png" >
+        <h3>CREATE YOUR FREE ACCOUNT</h3>
+        <p>Build new tech skills on us with free access to 50+ expert-led courses, assessments and more</p>
+    </div>
+</div>
+
+
+<!-- blog -->
+<div class="blogging">
+    <div id="photo_one">
+        <h1>MY<br> PLURALSIGHT<br> STORY</h1>
+    </div>
+
+
+
+    <div class="soldier">
+        <h1>From Soldier to IT Certified</h1>
+        <p>Ryan Chasteauneuf had always dreamed of being a soldier. After disaster struck in Afghanistan, he was forced to abandon his lifelong dream and start over. Driven to achieve in the face of adversity, he turned to Pluralsight to upskill.</p>
+        <button>See Ryan's Story</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+<script src="../js/index.js">
+
+
+   
+</script>
+<!-- //    const paras = () => {
+    //         window.location.href="https://www.pluralsight.com/pricing/skills"
+    //     } -->
+
+

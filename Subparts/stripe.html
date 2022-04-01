@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .ads-main{
+        border:2px solid #222222;
+        width: 100%;
+        height: 78.13px ;
+        display: flex;
+        background-color: #222222;
+    }
+    .ads{
+        border:2px solid white;
+        width: 1380px;
+        height:68.13px;
+        background-color: #222222;
+    }
+    .ads-main>button{
+        border: 2px solid #222222;
+        width: 40.17px;
+        height: 44px;
+        padding: 7px 15px;
+        color:#ffffff;
+        font:20px;
+        background-color: #222222;
+        position: relative;
+        left:90px;
+    }
+    ads>img{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+    <div class="ads-main">
+        <div class="ads">
+           <img src="https://www.pluralsight.com/content/pluralsight/en/global/promos/tech-bingo/jcr:content/main/promo_wrapper_copy/parsys/generic_block_108870/parsys/generic_block_copy_c/parsys/generic_block_363416/parsys/columns/column-parsys-1/animation_wrapper/parsys/image/image-res.img.6c055658-1a52-4252-ba5b-12be3a3814e5.png" >
+        </div>
+        <button>X</button>
+    </div>  
+</body>
+</html>
+<script>
+    document.querySelector("ads-main>button").addEventListener("click",myfunction)
+
+    function myfunction(){
+        window.location.href="https://www.google.com/"
+    }
+</script>

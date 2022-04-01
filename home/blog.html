@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+   .blogging{
+       border: 2px solid red;
+       width: 100%;
+       height: auto;
+       display: grid;
+       grid-template-columns: 60% 40%;
+       grid-template-rows: 600px;
+   }
+   .blogging>div{
+       border:2px solid black;
+   }
+   #photo_one{
+       background-image: url("https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/targeted_section/targeted-parsys-customer-types-1/generic_block/parsys/columns/column-parsys-1/generic_block/image-res.img.9f04d461-0d91-4ada-a995-52d553f671fa.png");
+   }
+   #photo_one>h1{
+       font-size: 70px;
+       font-weight: bolder;
+       color: rgb(205, 195, 50);
+       margin-left: 30px;
+
+   }
+
+   .soldier{
+       background-color:#1893bd;
+       text-align: center;
+   }
+   .soldier>h1{
+       color: white;
+       font-size: 38px;
+   }
+   .soldier>p{
+    color: white;
+       font-size: 28px;
+       margin: 85px 45px 25px 45px;
+   }
+
+.soldier>button{
+    margin-top: 45px;
+    border: 5px solid black;
+    background-color: black;
+    width: 250px;
+    height: 60px;
+    color: white;
+    font-size: 22px;
+}
+</style>
+<body>
+    <div class="blogging">
+         <div id="photo_one">
+             <h1>MY<br> PLURALSIGHT<br> STORY</h1>
+         </div>
+
+
+
+         <div class="soldier">
+             <h1>From Soldier to IT Certified</h1>
+             <p>Ryan Chasteauneuf had always dreamed of being a soldier. After disaster struck in Afghanistan, he was forced to abandon his lifelong dream and start over. Driven to achieve in the face of adversity, he turned to Pluralsight to upskill.</p>
+             <button>See Ryan's Story</button>
+         </div>
+    </div>
+    
+
+
+</body>
+</html>

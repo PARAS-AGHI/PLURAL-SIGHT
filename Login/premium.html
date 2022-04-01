@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        
+        background-color: #181c20;
+        font-family: 'Nunito Sans', sans-serif;;
+    }
+    #main_it{
+        /* border:2px solid teal; */
+        width: 100%;
+        height: auto;
+        display:flex;
+        
+    }
+ .form{
+     /* border:2px solid white; */
+     width: 638px;
+     height: auto;
+     background-color: #181818;
+     color: #ffffff;
+     margin-left: 130px;
+     margin-top: 90px;
+    
+ }
+ #account_info{
+     /* border: 2px solid rebeccapurple; */
+     width: 100%;
+     height: 70px;
+     font-size: 25px;
+ }
+ .below_form{
+     border: 2px solid black;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-rows: 100px 100px 100px;
+     gap:15px
+ }
+ .below_form>div{
+     border: 2px solid darkblue;
+ }
+ .order_summary{
+     border: 2px solid white;
+     width: 480px;
+     height: 504px;
+     margin-left: 65px;
+     margin-top: 55px;
+     color:#ffffff;
+ }
+ .PPQ{
+     border:2px solid white;
+     width: 100%;
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-rows: 80px 80px ;
+
+ }
+ .PPQ>div{
+     /* border: 2px solid yellowgreen; */
+ }
+ .PPQ>div>h2{
+     margin-left: 45px;
+ }
+ #b{
+     text-align: end;
+     margin-right: 20px;
+ }
+ #paisa{
+    margin-right: 20px;
+     text-align: end;
+ }
+ #c>p{
+     font-size: 20px;
+ }
+  /* #increase{
+     height: 25px;
+     width: 25px;
+     font-size: 20px;
+     margin-left: 20px;
+ }
+ #decrease{
+     margin-left: 20px;
+    height: 25px;
+     width: 25px;
+     font-size: 20px;
+ } */
+ #sub_tota{
+    /* border:2px solid orange; */
+     width: 100%;
+     height:80px;
+     margin-top: 10px;
+     display: flex;
+ }
+ #sub_one{
+     /* border: 2px solid green; */
+     margin-left: 220px;
+ }
+ #sub_two{
+     /* border: 2px solid yellow; */
+     margin-left: 30px;
+ }
+ #full_total{
+     /* border: 2px solid pink; */
+     width: 100%;
+     height: 80px;
+     margin-top: 10px;
+     display: flex;
+ }
+ #full_tota_one{
+     /* border: 2px solid white; */
+     width:180px;
+     height:100%
+     
+ }
+ #full_tota_two{
+     border: 4px solid white;
+     width:180px;
+     height:100%;
+     margin-left: 110px;
+ }
+ #full_tota_two>h2{
+     text-align: center;
+ }
+ 
+
+
+ .email{
+     border: 2px solid black;
+     width: 98%;
+     height: 40px;
+     position: relative;
+     bottom: 12px;
+     background-color: #ffffff;
+     border-radius: 4px;
+    }
+
+    #checkbox{
+        color:#ffffff
+    }
+
+    #continue{
+     width: 99%;
+     height: 50px;
+     color:#ffffff;
+     background-color: #0074ab;
+     border-radius: 7px;
+     margin-top: 15px;
+    }
+
+
+    .Payment{
+        border: 2px solid white;
+        width: 638px;
+        height: auto;
+        margin-left: 130px;
+        position: relative;
+        top:70px
+
+    }
+
+    /* .Payment a{
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    .Payment a:hover{
+        background-color: #ddd;
+        color:black;
+    } */
+
+    .select{
+        border: 2px solid white;
+        width:100%;
+        height: 100px;
+        color: #ffffff;
+    }
+    .select>h4{
+        position: relative;
+        bottom: 15px;
+
+    }
+   
+
+    #checkboxdivone > label{
+           position: relative;
+           top: 15px;
+           left: 30px;
+    }
+    #checkone{
+        
+        position: relative;
+        top: 55px
+    }
+    .card{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: auto;
+        color: #ffffff;
+    }
+    #upper-check{
+        /* border: 2px solid aqua; */
+        width: 100%;
+        height: 100px;
+    }
+    .cardparttwo{
+        /* border: 2px solid gold; */
+        width: 100%;
+        height:auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        gap:15px
+    }
+    .cardparttwo>div{
+        border: 2px solid white;
+        border-radius: 7px;
+    }
+    #flexing{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    flex>div{
+        border: 2px solid #ffffff;
+        width: 100%;
+        height: auto;
+    }
+
+    #Review{
+        width: 99%;
+     height: 50px;
+     color:#ffffff;
+     background-color: #0074ab;
+     border-radius: 7px;
+     margin-top: 15px;
+    }
+
+</style>
+<body>
+    
+      <div id="main_it">
+        <div class="form">
+            <div id="account_info"><h2>Account Details</h2></div>
+            <form  id="mynameisform">
+            <div class="below_form">
+                
+                    <div>
+                        <h4>First Name*</h4>
+                    <input type="text" placeholder="Enter first name"  class="email" id="fname"  >
+                    </div>
+
+                    <div>
+                        <h4>Last Name*</h4>
+                    <input type="text" placeholder="Enter last name" class="email" id="lname">
+                    </div>
+
+                    <div>
+                        <h4>Email*</h4>
+                    <input type="email" placeholder="Enter Email" class="email" id="elmail">
+                    </div>
+
+                    <div>
+                        <h4>Confirm Email*</h4>
+                    <input type="email" placeholder="Enter Email" class="email" id="celmail">
+                    </div>
+
+                    <div>
+                        <h4>Country of Residence*</h4>
+                    <select  class="email" id="cor">
+                        <option>India</option>
+                        <option>Australia</option>
+                        <option>England</option>
+                        <option>UK</option>
+                        <option>Singapore</option>
+                        <option>Chins</option>
+                        <option>Budapest</option>
+                        <option>Hungary</option>
+                        <option>Russia</option>
+                        
+                    </select>
+                    </div>
+
+                    <div>
+                        <h4>Company Name*</h4>
+                    <input type="text" placeholder="Enter company name" class="email" id="cona">
+                    </div>
+                    <div id="checkbox" onclick="takeToPay()">
+                        <input type="checkbox" label="agree" id="check">
+                        <label for="agree">By checking here and continuing, I agree to the Pluralsight</label><br>
+                        <button id="continue" name="Continue" type="submit" >Continue</button>
+                </div>
+                
+                    
+            </div>
+            
+        </div>
+        </form>
+
+        <div class="order_summary">
+            <div><h1>Order Summary</h1></div>
+            <div class="PPQ">
+                <div><b>PLAN</b></div>
+                <div id="b"><b>PRICE</b></div>
+                <!-- <div><b>QUANTITY</b></div> -->
+                <div id="c"><p>PREMIUM</p></div>
+                <div id="paisa"><P>Rs.18,399</P></div>
+                <!-- <div>
+                    <button id="increase">+</button>
+                    <button id="decrease">-</button>
+                    <h2></h2></div> -->
+                    
+
+               </div>
+
+               <div id="sub_tota">
+                   <div id="sub_one"><h4>Subtotal  = </h4></div>
+                   <div  id="sub_two"><h4>price * quantity</h4></div>
+               </div>  
+               
+               <div id="full_total">
+                   <div id="full_tota_one"><h4>Total Due Today  =></h4></div>
+                   <div id="full_tota_two"><h1>Rs.18,399</h1></div>
+
+               </div>
+
+            
+             
+       
+        </div>
+   
+   
+    </div>
+
+
+
+    <div class="Payment" >
+        <div class="select">
+            <h1>Payment</h1>
+            <h4>Select a payment method</h4>
+        </div>
+        <div class="card">
+            <div id="upper-check">
+                <div id="checkboxdivone">
+                    <input type="checkbox" id="checkone" value="agree" >
+                    <label for="agree"><h3>Payment Card</h3>
+                    </label><br><br>
+                </div>
+            </div>    
+            <form id="mymyform">
+            <div class="cardparttwo">
+                    <div>
+                        <div>
+                            <h4>Name on the card*</h4>
+                        <input type="text" placeholder="Enter Cardholder's name" class="email" id="finame">
+                        </div>
+                    </div>
+
+                    <div><div>
+                        <h4>Card NUmber</h4>
+                    <input type="number" placeholder="Enter Card Number" class="email" id="cardnum">
+                    </div></div>
+
+                    <div id="flexing"><div id="one">
+                        <h4>-Expiration-</h4>
+                    <select class="email">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+
+                    </select>
+                    </div>
+                    <div id="two">
+                        <h4>-Year-</h4>
+                        <select class="email">
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+    
+                        </select>
+                    </div>
+                </div>
+
+                    <div><div>
+                        <h4>CVV</h4>
+                    <input type="number" placeholder="Enter CVV" class="email" id="cvv">
+                    </div></div>
+
+                    <div><div>
+                        <h4>Address</h4>
+                    <input type="number" placeholder="Enter Address" id="add"  class="email">
+                    </div></div>
+
+                    <div><div>
+                        <h4>Address(cont.)</h4>
+                    <input type="text" placeholder="Enter Address" class="email"  id="addcon">
+                    </div></div>
+
+                    <div><div>
+                        <h4>Country</h4>
+                        <select  class="email" id="county">
+                            <option>India</option>
+                            <option>Australia</option>
+                            <option>England</option>
+                            <option>UK</option>
+                            <option>Singapore</option>
+                            <option>Chins</option>
+                            <option>Budapest</option>
+                            <option>Hungary</option>
+                            <option>Russia</option>
+                            
+                        </select>
+                    </div></div>
+
+                    <div><div>
+                        <h4>City</h4>
+                    <input type="text" placeholder="Enter City" id="city" class="email">
+                    </div></div>
+
+                    <div><div>
+                        <h4>State</h4>
+                    <input type="text" placeholder="Enter State" id="state"  class="email">
+                    </div></div>
+
+                    <div><div>
+                        <h4>Postal code</h4>
+                    <input type="text" placeholder="Enter Postal Code" id="postal"  class="email">
+                    </div></div>
+                    <button id="Review" name="Continue" type="submit" onclick="takeToLogin()" >Review Order</button>
+            </div>
+        </div>
+    </div>
+</form>
+    
+  
+
+</body>
+</html>
+
+<script src="../js/premium.js">
+
+
+</script>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* whats-new */
+
+    .whats-new{
+        border: 2px solid white;
+        width: 100%;
+        height: 230px;
+        background-color: #181818;
+    }
+    .whats-new h5{
+        color:#e40084;
+        margin-top: 130px;
+        margin-left: 10px;
+        
+    }
+    .whats-new h1{
+        color: #ffffff;
+        margin-left: 10px;
+        font-size: 40px;
+    }
+
+/* expertise */
+.expertise{
+    border: 2px solid goldenrod;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 480px 480px;
+    
+}
+.expertise>div{
+    border:2px solid black;
+    border-radius: 10px;
+    
+}
+#expert-one{
+margin-left: 50px;
+background-color: #181818;
+text-align: start;
+}
+#expert-one-logo{
+    border:2px solid black;
+    width: 200px;
+    height: 40px;
+    background-color: #181818;
+    margin-left: 30px;
+    display: inline-block;
+    
+}
+#expert-one-heading{
+    border:2px solid red;
+    width:100px ;
+    height: 40px;
+    margin-left: 20px;
+    color: #ffffff;
+    background-color: #181818;
+    display: inline-block;
+}
+
+#expert-one h1{
+     color: #ffffff;
+     margin-left: 30px;
+}
+#expert-one p{
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 30px;
+}
+#expert-one  .learn-more{
+    border:2px solid white;
+    width: 200px;
+    height: 40px;
+    margin-top: 70px;
+    color:#ffffff;font-size: 22px;
+    margin-left: 30px;
+    background-color: #181818;
+}
+
+
+
+#expert-two{
+margin-right: 50px;
+}
+
+#expert-two img{
+    width: 100%;
+    height: 100%;
+}
+
+</style>
+<body>
+    <!-- whats-new -->
+    <div class="whats-new">
+        <h5>SEE WHAT'S NEW</h5>
+        <h1>Our latest features</h1>
+    </div>
+
+<!-- expertise -->
+ <div class="expertise">
+     <div id="expert-one">
+         <div id="expert-one-logo">
+             <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png" >
+             
+         </div>
+         <div id="expert-one-heading"><h4>LABS</h4></div>
+
+         <h1>Deepen your people's expertise with <br>hands-on labs</h1>
+         <p>Improve your teams’ confidence in their ability to deliver on business<br> objectives by building the right skills that meet your org’s needs. Pluralsight offers 950+ labs that enable hands-on practice in secure environments across domains such as cloud (AWS, GCP and Azure), IT Ops, security, data and software development</p>
+         
+         <div class="learn-more">Learn More   ></div>
+     </div>
+
+
+
+     <div id="expert-two">
+         <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/Cloud-labs-image2x.png" >
+     </div>
+
+ </div>
+
+
+</body>
+</html>
